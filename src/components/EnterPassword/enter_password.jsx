@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Main.module.css';
+import classes from '../Main/Main.module.css';
 function EnterPassword() {
   return (
     <div className={classes.main}>

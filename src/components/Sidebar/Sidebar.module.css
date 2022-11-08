@@ -11,6 +11,7 @@
 
 .main_img {
   width: 50%;
+  position: relative;
 }
 
 @media (max-width:800px) {
@@ -24,6 +25,8 @@
     display: grid;
     place-items: center;
     width: 100%;
+    position: relative;
+
   }
 
   .main_img img {
@@ -31,5 +34,36 @@
     margin: 40px 0;
     margin-bottom: 20px;
 
+  }
+}
+
+.main__btn {
+  position: absolute;
+  top: 75%;
+  left: 42%;
+  width: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #F17851;
+}
+
+@media (max-width:800px) {
+  .main__btn {
+    width: 50px !important;
+    height: 46px !important;
+    left: 64%;
+    top: 48%;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+    outline: none !important;
+    color: #F17851 !important;
+    background-color: transparent !important;
   }
 }

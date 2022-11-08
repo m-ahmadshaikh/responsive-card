@@ -1,19 +1,16 @@
-import './App.css';
-import React, { useState } from 'react';
-import Main from './components/Main';
-import Sidebar from './components/Sidebar';
-import EnterPassword from './components/Main/enter_password';
-function App() {
-  const [show, setShow] = useState(false);
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Email from './pages/Email';
+import Home from './pages/Home';
+import EnterPassword from './pages/Password';
 
-  const onSubmit = () => {
-    setShow((prev) => !prev);
-  };
+function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      {show ? <EnterPassword /> : <Main onSubmit={onSubmit} />}
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/password" element={<EnterPassword />} />{' '}
+      <Route path="/email" element={<Email />} />
+    </Routes>
   );
 }
 
