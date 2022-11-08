@@ -39,9 +39,9 @@
 
 .main__btn {
   position: absolute;
-  top: 75%;
-  left: 42%;
-  width: 30px;
+  top: 77%;
+  left: 45%;
+  width: 50px !important;
   cursor: pointer;
   background-color: transparent;
   background-repeat: no-repeat;
