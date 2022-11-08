@@ -1,0 +1,35 @@
+.main {
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  align-items: center;
+  background-color: #FDD548;
+}
+
+.main_img {
+  width: 50%;
+}
+
+@media (max-width:800px) {
+
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main_img {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+
+  .main_img img {
+    width: 80%;
+    margin: 40px 0;
+    margin-bottom: 20px;
+
+  }
+}
